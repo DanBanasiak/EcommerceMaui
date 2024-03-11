@@ -7,7 +7,9 @@
     <ListView x:Name="CollectionListView" Margin="30">
         <ListView.ItemTemplate>
             <DataTemplate>
-                <Label Text="{Binding Name}" TextColor="DarkGreen"/>
+                <ViewCell>
+                    <Label Text="{Binding Name}" FontSize="Large" TextColor="DarkGreen"/>
+                </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
     </ListView>

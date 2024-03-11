@@ -1,4 +1,5 @@
 using Ecommerce.Data;
+using System.Collections.ObjectModel;
 
 namespace Ecommerce.Pages;
 
@@ -13,6 +14,6 @@ public partial class CollectionPage : ContentPage
 	{
         base.OnAppearing();
 
-        CollectionListView.ItemsSource = ShoesData.ShoesList;
+        CollectionListView.ItemsSource = new ObservableCollection<Models.Shoes>(ShoesData.ShoesList);
     }
 }
